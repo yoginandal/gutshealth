@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./app/header/Navbar";
+import Footer from "./app/footer/Footer";
 import HomePage from "./pages/HomePage";
 import "@/App.css";
 // import AboutPage from "./pages/AboutPage"; // Example additional page
@@ -14,6 +15,7 @@ function App() {
         {/* <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} /> */}
       </Routes>
+      <Footer />
     </Router>
   );
 }
