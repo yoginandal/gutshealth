@@ -60,7 +60,7 @@ const RightImageLayout = () => {
           <div className="mt-8 lg:mt-0 lg:w-1/2 flex justify-end lg:items-end lg:flex-1">
             {/* Shadow Wrapper */}
             <img
-              src="public/assets/webp/man.webp" // replace with the path to your image
+              src="../assets/webp/man.webp" // replace with the path to your image
               alt="Gut Cleanse Program"
               className="max-w-full lg:h-[35.417vw] object-cover drop-shadow-lg"
               style={{
