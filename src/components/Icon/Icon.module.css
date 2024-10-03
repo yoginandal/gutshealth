@@ -1,0 +1,15 @@
+.iconCircle {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  border-radius: 50%;
+  background-image: url("/assets/svg/icon-circle.svg"); /* Set the background image */
+  background-size: cover; /* Ensure the background covers the entire circle */
+  background-position: center;
+  background-repeat: no-repeat; /* Ensure no repeating of the background image */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center content inside the iconCircle */
+  position: relative;
+  box-shadow: 20px 20px 40px #8d8d8d, -20px -20px 40px #ffffff;
+  z-index: 99;
+}

@@ -1,0 +1,60 @@
+.card {
+  max-width: 300px;
+  padding: 30px 20px;
+  background: #e4e5e2; /* Light subtle gradient */
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  /* box-shadow: 5px 5px 20px #8d8d8d, -5px -5px 20px #ffffff; */
+
+  text-align: center;
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.iconWrapper {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.cardTitle {
+  margin: 15px 0 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  font-family: "Playfair Display", serif; /* Luxurious serif font */
+}
+
+.cardDescription {
+  font-size: 0.95rem;
+  color: #777;
+  text-align: justify;
+  font-family: "Roboto", sans-serif; /* Clean sans-serif font */
+}
+
+/* Button styles */
+.cardButton {
+  padding: 12px 25px;
+  background-color: #a0853f;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 15px; /* Space between description and button */
+  /* box-shadow: 5px 5px 9px #403519, -5px -5px 9px #ffd565; */
+  box-shadow: #403519 0px 2px 4px, #403519 0px 7px 13px -3px,
+    #947521 0px -3px 0px inset;
+}
+
+.cardButton:hover {
+  background-color: #a68c44; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.cardButton:active {
+  background-color: #7e571d; /* Even darker on click */
+  transform: translateY(0); /* Reset on click */
+}
