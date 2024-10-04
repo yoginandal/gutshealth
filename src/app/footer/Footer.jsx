@@ -16,7 +16,7 @@ export default function Footer() {
     <footer className="bg-[#1b1b1b] text-[#e4e5e2] py-16">
       <div className="container mx-auto px-4">
         {/* Top Section */}
-        <div className="grid grid-cols-4 gap-8 pb-10 mb-10 border-b border-[#a0853f]">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 pb-10 mb-10 border-b border-[#a0853f] text-left">
           {/* Column 1: Logo & Slogan */}
           <div>
             <h2 className="text-3xl font-bold text-[#a0853f] mb-4">
@@ -26,7 +26,7 @@ export default function Footer() {
           </div>
 
           {/* Column 2: Navigation Links */}
-          <div className="text-center">
+          <div>
             <ul className="space-y-4">
               <li>
                 <a
@@ -72,7 +72,7 @@ export default function Footer() {
           </div>
 
           {/* Column 3: Contact Info */}
-          <div className="text-left">
+          <div>
             <p className="font-semibold text-lg mb-4">Contact Us</p>
             <p className="mb-2">
               <FontAwesomeIcon
@@ -95,9 +95,9 @@ export default function Footer() {
           </div>
 
           {/* Column 4: Social Media Icons */}
-          <div className="text-center">
+          <div>
             <p className="font-semibold text-lg mb-4">Find Us On</p>
-            <div className="space-x-4 text-2xl">
+            <div className="flex space-x-4 text-2xl">
               <a
                 href="#"
                 className="text-[#a0853f] hover:text-white transition duration-300"
@@ -127,7 +127,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section: Copyright */}
-        <div className="text-center">
+        <div className="text-left">
           <p className="text-sm text-[#a0853f]">
             &copy; {new Date().getFullYear()} GutsHealth. All Rights Reserved.
           </p>
