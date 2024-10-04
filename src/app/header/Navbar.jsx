@@ -4,10 +4,35 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa"; // FontAwesome icons
 import styles from "@/components/Card/Card.module.css"; // Assuming this has your button styles
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const menuItems = ["Home", "About", "Services", "Programs", "Contact"];
+  // const menuItems = ["Home", "About", "Services", "Programs", "Contact"];
+  const menuItems = [
+    {
+      nav: "Home",
+      path: "/",
+    },
+    {
+      nav: "About",
+      path: "/about-us",
+    },
+    {
+      nav: "Services",
+      path: "/services",
+    },
+    {
+      nav: "Programs",
+      path: "/programs",
+    },
+    {
+      nav: "Contact",
+      path: "/contact-us",
+    },
+
+
+  ];
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen); // Toggle menu open/close state
@@ -28,23 +53,25 @@ export default function Navbar() {
 
         {/* Menu Items for large screens */}
         <div className="hidden md:flex space-x-6">
-          {menuItems.map((item) => (
-            <motion.a
-              key={item}
-              href="#"
-              className="relative px-3 py-2 rounded-md text-lg font-medium text-[#333]"
-              whileHover={{ scale: 1.1 }}
-              initial="hidden"
-              animate="visible"
-            >
-              {item}
-              <motion.div
-                className="absolute bottom-0 left-0 w-full h-0.5 bg-[#a0853f]" // Gold underline on hover
-                initial={{ scaleX: 0 }}
-                whileHover={{ scaleX: 1 }}
-                transition={{ duration: 0.3 }}
-              />
-            </motion.a>
+          {menuItems.map(({nav,path}) => (
+            <Link to={path} key={nav}>
+              <motion.a
+               
+                href="#"
+                className="relative px-3 py-2 rounded-md text-lg font-medium text-[#333]"
+                whileHover={{ scale: 1.1 }}
+                initial="hidden"
+                animate="visible"
+              >
+                {nav}
+                <motion.div
+                  className="absolute bottom-0 left-0 w-full h-0.5 bg-[#a0853f]" // Gold underline on hover
+                  initial={{ scaleX: 0 }}
+                  whileHover={{ scaleX: 1 }}
+                  transition={{ duration: 0.3 }}
+                />
+              </motion.a>
+            </Link>
           ))}
         </div>
 
