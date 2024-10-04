@@ -16,7 +16,7 @@ export default function Navbar() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          Bemian
+          GutsHealth
         </motion.div>
 
         {/* Menu Items for large screens */}
