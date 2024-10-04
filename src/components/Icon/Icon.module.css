@@ -11,5 +11,4 @@
   align-items: center; /* Center content inside the iconCircle */
   position: relative;
   box-shadow: 20px 20px 40px #8d8d8d, -20px -20px 40px #ffffff;
-  z-index: 99;
 }

@@ -14,7 +14,6 @@ const Card = ({ icon, title, description }) => {
               width: "40px",
               height: "40px",
               filter: "drop-shadow(5px 5px 50px #fff)",
-              zIndex: "50",
             }}
           />
         </Icon>
