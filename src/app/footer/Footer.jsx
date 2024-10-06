@@ -10,6 +10,7 @@ import {
   faPhone,
   faMapMarkerAlt,
 } from "@fortawesome/free-solid-svg-icons";
+import logo from "../../../public/assets/logo.png";
 
 export default function Footer() {
   return (
@@ -19,9 +20,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 pb-10 mb-10 border-b border-[#a0853f] text-left">
           {/* Column 1: Logo & Slogan */}
           <div>
-            <h2 className="text-3xl font-bold text-[#a0853f] mb-4">
-              GutsHealth
-            </h2>
+            <img
+              src={logo}
+              alt="logo"
+              className=" lg:max-w-[80%] max-w-[50%] md:max-w-[35%]"
+            />
             <p className="text-lg">Nourishing you to better health.</p>
           </div>
 
@@ -79,11 +82,18 @@ export default function Footer() {
                 icon={faEnvelope}
                 className="text-[#a0853f] mr-2"
               />
-              info@GutsHealth.com
+              <a href="mailto:ayurvedicnutritionbyss@gmail.com">
+                ayurvedicnutritionbyss@gmail.com
+              </a>
             </p>
             <p className="mb-2">
-              <FontAwesomeIcon icon={faPhone} className="text-[#a0853f] mr-2" />
-              +1 234 567 890
+              <a href="tel:+919818295702">
+                <FontAwesomeIcon
+                  icon={faPhone}
+                  className="text-[#a0853f] mr-2"
+                />
+                +91-9818295702
+              </a>
             </p>
             <p>
               <FontAwesomeIcon

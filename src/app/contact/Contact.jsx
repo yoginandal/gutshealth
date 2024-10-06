@@ -50,7 +50,6 @@ export default React.memo(function ContactForm() {
     (e) => {
       e.preventDefault();
 
-      // Moved validateForm inside the useCallback
       const validateForm = () => {
         const newErrors = {};
         if (!formValues.firstName)
@@ -77,7 +76,7 @@ export default React.memo(function ContactForm() {
       console.log("Form submitted", formValues);
       setErrors({});
     },
-    [formValues] // Removed validateForm from dependencies
+    [formValues]
   );
 
   return (
@@ -152,7 +151,7 @@ export default React.memo(function ContactForm() {
           </div>
           <button
             type="submit"
-            className="w-full bg-[#a0853f] text-white py-2 px-4 rounded-md hover:bg-[#a0843fc0] focus:outline-none focus:ring-2 focus:ring-[ #a0843fc0] focus:ring-offset-2"
+            className="w-full bg-[#a0853f] text-white py-2 px-4 rounded-md hover:bg-[#a0843fc0] focus:outline-none focus:ring-2 focus:ring-[ #a0843fc0] focus:ring-offset-2 shadow-md"
           >
             Send Message
           </button>
@@ -167,26 +166,36 @@ export default React.memo(function ContactForm() {
           />
         </div>
         <div className="space-y-4 bg-[#c9a753] p-6 rounded-lg text-white shadow-lg">
-          <div className="flex items-center space-x-3 p-3 bg-[#a0843fc0] rounded-md">
-            <Mail className="w-10 h-10 p-2 bg-[#c9a753] rounded-full" />
-            <div>
-              <p className="font-bold">Email us</p>
-              <div>ayurvedicnutritionbyss@gmail.com</div>
-            </div>
+          <div className="flex items-center space-x-3 p-3 bg-[#a0843fc0] rounded-md shadow-md">
+            <Mail className="w-10 h-10 p-2 bg-[#c9a753] rounded-full drop-shadow-md" />
+            <a href="mailto:ayurvedicnutritionbyss@gmail.com">
+              <div>
+                Email us
+                <div>ayurvedicnutritionbyss@gmail.com</div>
+              </div>
+            </a>
           </div>
-          <div className="flex items-center space-x-3 p-3 bg-[#a0843fc0] rounded-md">
-            <Phone className="w-10 h-10 p-2 bg-[#c9a753] rounded-full" />
-            <div>
-              <p className="font-bold">Call us</p>
-              <div>(+005) 432 986 450</div>
-            </div>
+          <div className="flex items-center space-x-3 p-3 bg-[#a0843fc0] rounded-md shadow-md">
+            <Phone className="w-10 h-10 p-2 bg-[#c9a753] rounded-full drop-shadow-md" />
+            <a href="tel:+919818295702">
+              <div>
+                Call us
+                <div>+91-9818295702</div>
+              </div>
+            </a>
           </div>
-          <div className="flex items-center space-x-3 p-3 bg-[#a0843fc0] rounded-md">
-            <MapPin className="w-10 h-10 p-2 bg-[#c9a753] rounded-full" />
-            <div className="font-bold">
-              <p>Our Address</p>
-              <div>230 Norman Street New York, H8R 1A1</div>
-            </div>
+          <div className="flex items-center space-x-3 p-3 bg-[#a0843fc0] rounded-md shadow-md">
+            <MapPin className="w-10 h-10 p-2 bg-[#c9a753] rounded-full drop-shadow-md" />
+            <a
+              href="https://www.google.com/maps?q=230+Norman+Street+New+York,+H8R+1A1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div>
+                Our Address
+                <div>230 Norman Street New York, H8R 1A1</div>
+              </div>
+            </a>
           </div>
         </div>
       </div>

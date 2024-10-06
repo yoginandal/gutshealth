@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa"; // FontAwesome icons
 import styles from "@/components/Card/Card.module.css"; // Assuming this has your button styles
 import { Link } from "react-router-dom";
+import logo from "../../../public/assets/logo.png";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,14 +41,11 @@ export default function Navbar() {
     <nav className="p-4 bg-[#e4e5e2] text-[#333] shadow-lg relative z-50">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo Section */}
-        <motion.div
-          className="text-3xl font-serif font-bold text-[#a0853f]" // Gold color for the logo
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          GutsHealth
-        </motion.div>
+        <img
+          src={logo}
+          alt="logo"
+          className=" lg:max-w-[18%] max-w-[50%] md:max-w-[35%]"
+        />
 
         {/* Menu Items for large screens */}
         <div className="hidden md:flex space-x-6">
