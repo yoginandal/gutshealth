@@ -33,39 +33,23 @@ export default function Footer() {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="#"
+                  href="/"
                   className="hover:text-[#a0853f] transition duration-300"
                 >
-                  Home
+                  About Me
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/gut-care-program"
                   className="hover:text-[#a0853f] transition duration-300"
                 >
-                  About
+                  Gut Care Program
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
-                  className="hover:text-[#a0853f] transition duration-300"
-                >
-                  Services
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="hover:text-[#a0853f] transition duration-300"
-                >
-                  Programs
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
+                  href="/contact-us"
                   className="hover:text-[#a0853f] transition duration-300"
                 >
                   Contact

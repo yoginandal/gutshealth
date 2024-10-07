@@ -1,5 +1,6 @@
 import BannerAbout from "@/Layout/BannerLayout/BannerAbout";
 import CardLayout from "@/Layout/CardLayout/CardLayout";
+import Testimonials from "@/components/Testimonial/Testimonial";
 
 export default function HomePage() {
   const cardsData = [
@@ -45,6 +46,7 @@ export default function HomePage() {
     <>
       <BannerAbout />
       <CardLayout cards={cardsData} />
+      <Testimonials />
     </>
   );
 }
