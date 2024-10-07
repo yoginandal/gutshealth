@@ -13,7 +13,7 @@ const InputField = ({
   required,
 }) => (
   <div>
-    <label htmlFor={id} className="block text-sm font-medium text-[#a0843fc0]">
+    <label htmlFor={id} className="block text-sm font-medium text-dgold">
       {label}
     </label>
     <input
@@ -23,9 +23,9 @@ const InputField = ({
       placeholder={placeholder}
       value={value}
       onChange={onChange}
-      className={`mt-1 block text-[#a0843fc0] w-full px-3 py-2 bg-white border ${
+      className={`mt-1 block text-dgold w-full px-3 py-2 bg-white border ${
         error ? "border-red-500" : "border-gray-300"
-      } rounded-md shadow-sm focus:outline-none focus:ring-[#a0843fc0] focus:border-[#a0843fc0]`}
+      } rounded-md shadow-sm focus:outline-none focus:ring-dgold focus:border-dgold`}
     />
     {error && <p className="text-sm text-red-600">{error}</p>}
   </div>
@@ -83,8 +83,8 @@ export default React.memo(function ContactForm() {
     <div className="flex flex-col gap-8 p-8 m-10 mx-auto md:flex-row max-w-7xl justify-center">
       <div className="flex- max-w-[600px] p-8 space-y-6 rounded-md bg-slate-50 shadow-lg">
         <div>
-          <h2 className="text-sm font-semibold text-[#a0853f]">Get in Touch</h2>
-          <h1 className="mt-2 text-3xl font-bold text-[#a0843fc0]">
+          <h2 className="text-sm font-semibold text-dgold">Get in Touch</h2>
+          <h1 className="mt-2 text-3xl font-bold text-lgold">
             Let&#39;s Chat, Contact with Us
           </h1>
           <p className="mt-2 text-gray-600">
@@ -136,7 +136,7 @@ export default React.memo(function ContactForm() {
           <div>
             <label
               htmlFor="message"
-              className="block text-sm font-medium text-[#a0843fc0]"
+              className="block text-sm font-medium text-dgold"
             >
               Message
             </label>
@@ -146,12 +146,12 @@ export default React.memo(function ContactForm() {
               placeholder="Type your message"
               value={formValues.message}
               onChange={handleChange}
-              className="mt-1 block w-full px-3 py-2 text-[#a0843fc0] bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#a0843fc0] focus:border-[#a0843fc0]"
+              className="mt-1 block w-full px-3 py-2 text-dgold bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-dgold focus:border-dgold"
             ></textarea>
           </div>
           <button
             type="submit"
-            className="w-full bg-[#a0853f] text-white py-2 px-4 rounded-md hover:bg-[#a0843fc0] focus:outline-none focus:ring-2 focus:ring-[ #a0843fc0] focus:ring-offset-2 shadow-md"
+            className="w-full bg-lgold text-white py-2 px-4 rounded-md hover:bg-dgold focus:outline-none focus:ring-0 focus:ring-[ #a0843fc0] focus:ring-offset-0 shadow-md"
           >
             Send Message
           </button>
@@ -165,9 +165,9 @@ export default React.memo(function ContactForm() {
             className="object-cover w-full h-full"
           />
         </div>
-        <div className="space-y-4 bg-[#c9a753] p-6 rounded-lg text-white shadow-lg">
-          <div className="flex items-center space-x-3 p-3 bg-[#a0843fc0] rounded-md shadow-md">
-            <Mail className="w-10 h-10 p-2 bg-[#c9a753] rounded-full drop-shadow-md" />
+        <div className="space-y-4 bg-lgold p-6 rounded-lg text-white shadow-lg">
+          <div className="flex items-center space-x-3 p-3 bg-dgold rounded-md shadow-md">
+            <Mail className="w-10 h-10 p-2 bg-lgold rounded-full drop-shadow-md" />
             <a href="mailto:ayurvedicnutritionbyss@gmail.com">
               <div>
                 Email us
@@ -175,8 +175,8 @@ export default React.memo(function ContactForm() {
               </div>
             </a>
           </div>
-          <div className="flex items-center space-x-3 p-3 bg-[#a0843fc0] rounded-md shadow-md">
-            <Phone className="w-10 h-10 p-2 bg-[#c9a753] rounded-full drop-shadow-md" />
+          <div className="flex items-center space-x-3 p-3 bg-dgold rounded-md shadow-md">
+            <Phone className="w-10 h-10 p-2 bg-lgold rounded-full drop-shadow-md" />
             <a href="tel:+919818295702">
               <div>
                 Call us
@@ -184,8 +184,8 @@ export default React.memo(function ContactForm() {
               </div>
             </a>
           </div>
-          <div className="flex items-center space-x-3 p-3 bg-[#a0843fc0] rounded-md shadow-md">
-            <MapPin className="w-10 h-10 p-2 bg-[#c9a753] rounded-full drop-shadow-md" />
+          <div className="flex items-center space-x-3 p-3 bg-dgold rounded-md shadow-md">
+            <MapPin className="w-10 h-10 p-2 bg-lgold rounded-full drop-shadow-md" />
             <a
               href="https://www.google.com/maps?q=230+Norman+Street+New+York,+H8R+1A1"
               target="_blank"
