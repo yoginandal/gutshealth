@@ -113,7 +113,7 @@ const BannerAbout = () => {
           {/* content - end */}
 
           {/* image - start */}
-          <div className="h-auto overflow-hidden rounded-lg lg:h-[70%] lg:min-w-[40%] xl:w-auto lg:mt-20 bg-cards shadow-xl pt-10">
+          <div className="h-auto overflow-hidden rounded-lg lg:h-[70%] lg:min-w-[30%] xl:w-auto lg:mt-20 bg-cards shadow-xl pt-10">
             <img
               src="../assets/webp/ss.webp"
               loading="lazy"
