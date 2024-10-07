@@ -45,7 +45,7 @@
   transition: background-color 0.3s ease, transform 0.3s ease;
   margin-top: 15px; /* Space between description and button */
   /* box-shadow: 5px 5px 9px #403519, -5px -5px 9px #ffd565; */
-  box-shadow: #403519 0px 2px 4px, #403519 0px 7px 13px -3px,
+  box-shadow: #403519 0px 2px 4px, #403519 0px 3px 5px -3px,
     #947521 0px -3px 0px inset;
 }
 
