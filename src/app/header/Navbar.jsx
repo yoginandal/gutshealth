@@ -99,14 +99,14 @@ export default function Navbar() {
             }}
           >
             {menuItems.map(({ nav, path }) => (
-              <motion.a
-                key={nav}
-                href={path}
-                className="text-3xl font-semibold text-dgold"
-                whileHover={{ scale: 1.2 }}
-              >
-                {nav}
-              </motion.a>
+              <Link to={path} key={nav} onClick={toggleMenu}>
+                <motion.div
+                  className="text-3xl font-semibold text-dgold"
+                  whileHover={{ scale: 1.2 }}
+                >
+                  {nav}
+                </motion.div>
+              </Link>
             ))}
 
             {/* Get Started Button for mobile view */}
