@@ -3,7 +3,7 @@ const Banner = () => {
     <div className="flex flex-col justify-center items-center py-20 px-5 text-center">
       {/* Text Section Above Image */}
       <h1 className="text-5xl lg:text-7xl font-bold text-yellow-700 mb-4 tracking-wide">
-        Welcome to a Premium Experience
+        Step into a world of Health Care
       </h1>
       <p className="text-xl lg:text-2xl text-gray-500 italic mb-8 max-w-3xl">
         Embark on a journey of exceptional quality, where{" "}

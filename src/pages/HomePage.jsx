@@ -1,7 +1,5 @@
+import BannerAbout from "@/Layout/BannerLayout/BannerAbout";
 import CardLayout from "@/Layout/CardLayout/CardLayout";
-import RightImageLayout from "@/Layout/RightImageLayout/RightImageLayout";
-import DietChart from "@/Layout/DietChart/DietChart";
-import Banner from "@/Layout/BannerLayout/BannerLayout";
 
 export default function HomePage() {
   const cardsData = [
@@ -39,10 +37,8 @@ export default function HomePage() {
 
   return (
     <>
-      <Banner />
+      <BannerAbout />
       <CardLayout cards={cardsData} />
-      <RightImageLayout />
-      <DietChart />
     </>
   );
 }

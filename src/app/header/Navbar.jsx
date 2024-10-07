@@ -12,20 +12,12 @@ export default function Navbar() {
   // const menuItems = ["Home", "About", "Services", "Programs", "Contact"];
   const menuItems = [
     {
-      nav: "Home",
+      nav: "About",
       path: "/",
     },
     {
-      nav: "About",
-      path: "/about-us",
-    },
-    {
-      nav: "Services",
-      path: "/services",
-    },
-    {
-      nav: "Programs",
-      path: "/programs",
+      nav: "Gut Care Program",
+      path: "/gut-care-program",
     },
     {
       nav: "Contact",
@@ -38,15 +30,12 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="p-4 bg-[#e4e5e2] text-[#333] shadow-lg relative z-50">
+    <nav className="p-4 text-[#333] relative z-50">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo Section */}
-        <img
-          src={logo}
-          alt="logo"
-          className=" lg:max-w-[18%] max-w-[50%] md:max-w-[35%]"
-        />
-
+        <Link to="/" className=" lg:max-w-[18%] max-w-[50%] md:max-w-[35%]">
+          <img src={logo} alt="logo" />
+        </Link>
         {/* Menu Items for large screens */}
         <div className="hidden md:flex space-x-6">
           {menuItems.map(({ nav, path }) => (
@@ -60,7 +49,7 @@ export default function Navbar() {
               >
                 {nav}
                 <motion.div
-                  className="absolute bottom-0 left-0 w-full h-0.5 bg-[#a0853f]" // Gold underline on hover
+                  className="absolute bottom-0 left-0 w-full h-0.5 bg-[#a0853f]"
                   initial={{ scaleX: 0 }}
                   whileHover={{ scaleX: 1 }}
                   transition={{ duration: 0.3 }}
@@ -87,7 +76,7 @@ export default function Navbar() {
       {/* Full Screen Overlay Menu for Mobile */}
       {isMenuOpen && (
         <motion.div
-          className="fixed inset-0 bg-cards text-[#e4e5e2] z-[999999999999] flex flex-col items-center justify-center"
+          className="fixed inset-0 bg-cards text-dgold z-[999999999999] flex flex-col items-center justify-center"
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.95 }}
@@ -109,25 +98,27 @@ export default function Navbar() {
               },
             }}
           >
-            {menuItems.map((item) => (
+            {menuItems.map(({ nav, path }) => (
               <motion.a
-                key={item}
-                href="#"
-                className="text-3xl font-semibold text-[#a0853f]"
+                key={nav}
+                href={path}
+                className="text-3xl font-semibold text-dgold"
                 whileHover={{ scale: 1.2 }}
               >
-                {item}
+                {nav}
               </motion.a>
             ))}
 
             {/* Get Started Button for mobile view */}
-            <button className={`${styles.cardButton}`}>Get Started</button>
+            <button className={`${styles.cardButton} text-[#fff]`}>
+              Get Started
+            </button>
           </motion.div>
 
           {/* Cross icon appears in the top-right corner in mobile view when the menu is open */}
           <div className="absolute top-4 right-4">
             <button onClick={toggleMenu}>
-              <FaTimes size={24} className="text-[#a0853f]" />
+              <FaTimes size={24} className="text-dgold" />
             </button>
           </div>
         </motion.div>

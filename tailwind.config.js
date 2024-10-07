@@ -4,6 +4,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        playfair: ["Playfair Display", "serif"],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -14,6 +17,7 @@ export default {
         foreground: "hsl(var(--foreground))",
         dgold: "#a68c44", // Define your custom color
         lgold: "#C9A753",
+        pgold: "#A16207",
         premium: "#D7D4CC",
         cards: "#E4E5E2",
         sage: "#9DC183",
