@@ -5,14 +5,14 @@ export default function Testimonials() {
       position: "CEO / Datadrift",
       imgUrl:
         "https://images.unsplash.com/photo-1567515004624-219c11d31f2e??auto=format&q=75&fit=crop&w=112",
-      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Example YouTube video
+      instagramEmbedUrl: "https://www.instagram.com/p/CFzBxVJlPLz/embed", // Example Instagram post
     },
     {
       name: "Kate Berg",
       position: "CFO / Dashdash",
       imgUrl:
         "https://images.unsplash.com/photo-1532073150508-0c1df022bdd1?auto=format&q=75&fit=crop&w=112",
-      videoUrl: "https://www.youtube.com/embed/9bZkp7q19f0", // Example YouTube video
+      instagramEmbedUrl: "https://www.instagram.com/p/CI6kZyMlJlB/embed", // Another example Instagram post
     },
   ];
 
@@ -32,19 +32,19 @@ export default function Testimonials() {
               key={index}
               className="flex flex-col items-center gap-4 rounded-lg bg-dgold px-8 py-6 md:gap-6"
             >
-              {/* YouTube Video */}
+              {/* Instagram Embed */}
               <div className="max-w-md text-center lg:text-lg">
                 <iframe
+                  src={testimonial.instagramEmbedUrl}
                   width="100%"
-                  height="315"
-                  src={testimonial.videoUrl}
-                  title={testimonial.name}
+                  height="480"
                   frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
+                  scrolling="no"
+                  className="rounded-lg"
+                ></iframe>
               </div>
 
+              {/* Optional: You can add the testimonial information below the Instagram embed */}
               {/* <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
                 <div className="h-12 w-12 overflow-hidden rounded-full border-2 border-indigo-100 bg-gray-100 md:h-14 md:w-14">
                   <img

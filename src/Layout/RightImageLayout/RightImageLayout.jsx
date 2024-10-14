@@ -1,6 +1,6 @@
 const RightImageLayout = () => {
   return (
-    <div className="flex justify-center p-4 sm:p-6 lg:p-12">
+    <div className="flex justify-center p-4 sm:p-6 lg:p-12 lg:pt-0 lg:mt-[-2rem]">
       <div
         className="bg-cards rounded-3xl p-4 sm:p-6 lg:p-12 w-full max-w-screen-xl"
         style={{
@@ -12,7 +12,7 @@ const RightImageLayout = () => {
         <div className="flex flex-col lg:flex-row items-start lg:justify-between flex-1">
           {/* Left content with increased width */}
           <div className="text-left space-y-4 sm:space-y-6 flex-1">
-            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-serif italic text-gray-900">
+            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-serif italic text-pgold">
               the <span className="font-bold">GUT CARE</span> Program
             </h1>
 

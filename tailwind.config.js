@@ -15,9 +15,9 @@ export default {
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        dgold: "#a68c44", // Define your custom color
-        lgold: "#C9A753",
-        pgold: "#A16207",
+        dgold: "#B84E3E", // Define your custom color
+        lgold: "#B76B5F",
+        pgold: "#a54637",
         premium: "#D7D4CC",
         cards: "#E4E5E2",
         sage: "#9DC183",

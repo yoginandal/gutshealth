@@ -30,7 +30,7 @@ const BannerAbout = () => {
                   href="#"
                   className="inline-block rounded-lg bg-dgold px-8 py-3 sm:mt-[2rem] text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-lgold focus-visible:ring active:bg-dgold md:text-base"
                 >
-                  Start your Ayurvedic Journey
+                  Start your Nutritional Journey
                 </a>
               </div>
             </div>

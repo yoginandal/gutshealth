@@ -36,7 +36,7 @@ export default function Navbar() {
     <nav className="p-4 text-[#333] relative z-50">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo Section */}
-        <Link to="/" className="lg:max-w-[18%] max-w-[50%] md:max-w-[35%]">
+        <Link to="/" className="lg:max-w-[30%] max-w-[50%] md:max-w-[35%]">
           <img src={logo} alt="logo" />
         </Link>
 

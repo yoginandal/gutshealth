@@ -17,7 +17,7 @@ export default function Footer() {
     <footer className="bg-[#1b1b1b] text-[#e4e5e2] py-16">
       <div className="container mx-auto px-4">
         {/* Top Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 pb-10 mb-10 border-b border-[#a0853f] text-left">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 pb-10 mb-10 border-b border-dgold text-left">
           {/* Column 1: Logo & Slogan */}
           <div>
             <img
@@ -34,7 +34,7 @@ export default function Footer() {
               <li>
                 <a
                   href="/"
-                  className="hover:text-[#a0853f] transition duration-300"
+                  className="hover:text-dgold transition duration-300"
                 >
                   About Me
                 </a>
@@ -42,7 +42,7 @@ export default function Footer() {
               <li>
                 <a
                   href="/gut-care-program"
-                  className="hover:text-[#a0853f] transition duration-300"
+                  className="hover:text-dgold transition duration-300"
                 >
                   Gut Care Program
                 </a>
@@ -50,7 +50,7 @@ export default function Footer() {
               <li>
                 <a
                   href="/contact-us"
-                  className="hover:text-[#a0853f] transition duration-300"
+                  className="hover:text-dgold transition duration-300"
                 >
                   Contact
                 </a>
@@ -62,27 +62,21 @@ export default function Footer() {
           <div>
             <p className="font-semibold text-lg mb-4">Contact Us</p>
             <p className="mb-2">
-              <FontAwesomeIcon
-                icon={faEnvelope}
-                className="text-[#a0853f] mr-2"
-              />
+              <FontAwesomeIcon icon={faEnvelope} className="text-dgold mr-2" />
               <a href="mailto:ayurvedicnutritionbyss@gmail.com">
                 ayurvedicnutritionbyss@gmail.com
               </a>
             </p>
             <p className="mb-2">
               <a href="tel:+919818295702">
-                <FontAwesomeIcon
-                  icon={faPhone}
-                  className="text-[#a0853f] mr-2"
-                />
+                <FontAwesomeIcon icon={faPhone} className="text-dgold mr-2" />
                 +91-9818295702
               </a>
             </p>
             <p>
               <FontAwesomeIcon
                 icon={faMapMarkerAlt}
-                className="text-[#a0853f] mr-2"
+                className="text-dgold mr-2"
               />
               123 Dietician St., Health City
             </p>
@@ -94,25 +88,25 @@ export default function Footer() {
             <div className="flex space-x-4 text-2xl">
               <a
                 href="#"
-                className="text-[#a0853f] hover:text-white transition duration-300"
+                className="text-dgold hover:text-white transition duration-300"
               >
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
               <a
                 href="#"
-                className="text-[#a0853f] hover:text-white transition duration-300"
+                className="text-dgold hover:text-white transition duration-300"
               >
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
               <a
                 href="#"
-                className="text-[#a0853f] hover:text-white transition duration-300"
+                className="text-dgold hover:text-white transition duration-300"
               >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
               <a
                 href="#"
-                className="text-[#a0853f] hover:text-white transition duration-300"
+                className="text-dgold hover:text-white transition duration-300"
               >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
@@ -122,7 +116,7 @@ export default function Footer() {
 
         {/* Bottom Section: Copyright */}
         <div className="text-left">
-          <p className="text-sm text-[#a0853f]">
+          <p className="text-sm text-dgold">
             &copy; {new Date().getFullYear()} GutsHealth. All Rights Reserved.
           </p>
         </div>
