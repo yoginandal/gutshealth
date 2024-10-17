@@ -10,7 +10,7 @@ const CardLayout = ({ cards }) => {
           </p>
 
           <h2 className="text-center text-2xl font-bold font-playfair text-pgold lg:text-5xl">
-            What We Specialized In
+            What We Specialise In
           </h2>
         </div>
       </div>
