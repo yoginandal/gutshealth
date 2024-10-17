@@ -14,7 +14,7 @@ import logo from "../../../public/assets/logo.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1b1b1b] text-[#e4e5e2] py-16">
+    <footer className="bg-[#DFA627] text-[#282828] py-16">
       <div className="container mx-auto px-4">
         {/* Top Section */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 pb-10 mb-10 border-b border-dgold text-left">
