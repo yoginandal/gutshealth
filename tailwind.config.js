@@ -6,6 +6,7 @@ export default {
     extend: {
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
+        rubik: ["Rubik", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

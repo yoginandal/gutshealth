@@ -6,8 +6,8 @@ const Banner = () => {
         Step into a world of Health Care
       </h1>
       <p className="text-xl lg:text-2xl text-gray-500 italic mb-8 max-w-3xl">
-        Embark on a journey of exceptional quality, where{" "}
-        <span className="text-lgold font-semibold">health</span> meets{" "}
+        Embark on a journey of exceptional quality, where
+        <span className="text-lgold font-semibold">health</span> meets
         <span className="text-lgold font-semibold">elegance</span>. Discover
         personalized solutions tailored just for you.
       </p>
@@ -23,7 +23,7 @@ const Banner = () => {
 
       {/* Text Section Below Image */}
       <p className="text-xl lg:text-2xl text-gray-600 mt-8 font-light">
-        <span className="text-lgold font-semibold">Elevate your lifestyle</span>{" "}
+        <span className="text-lgold font-semibold">Elevate your lifestyle</span>
         with tailored nutrition plans, expertly crafted just for you.
       </p>
     </div>

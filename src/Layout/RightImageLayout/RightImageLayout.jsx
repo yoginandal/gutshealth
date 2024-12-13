@@ -1,6 +1,10 @@
+import { useNavigate } from "react-router-dom";
+
 const RightImageLayout = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className="flex justify-center p-4 sm:p-6 lg:p-12 lg:pt-0 lg:mt-[-2rem]">
+    <div className="flex justify-center p-4 sm:p-6 lg:p-12 lg:pt-0 mt-[-2rem] pb-16">
       <div
         className="bg-cards rounded-3xl p-4 sm:p-6 lg:p-12 w-full max-w-screen-xl"
         style={{
@@ -54,6 +58,7 @@ const RightImageLayout = () => {
 
             {/* Move the button here, after all text */}
             <button
+              onClick={() => navigate("/contact-us")}
               className="bg-dgold text-white py-2 sm:py-3 px-4 sm:px-6 rounded-lg mt-8" // Adjusted margin for spacing
               style={{ boxShadow: "5px 8px 10px rgba(0, 0, 0, 0.8)" }}
             >

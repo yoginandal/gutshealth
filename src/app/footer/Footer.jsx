@@ -14,7 +14,7 @@ import logo from "../../../public/assets/logo.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1b1b1b] text-[#e4e5e2] py-16">
+    <footer className="bg-red-200 text-black py-16">
       <div className="container mx-auto px-4">
         {/* Top Section */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 pb-10 mb-10 border-b border-dgold text-left">
@@ -34,7 +34,7 @@ export default function Footer() {
               <li>
                 <a
                   href="/"
-                  className="hover:text-dgold transition duration-300"
+                  className="hover:text-dgold text-lg transition duration-300"
                 >
                   About Me
                 </a>
@@ -42,7 +42,7 @@ export default function Footer() {
               <li>
                 <a
                   href="/gut-care-program"
-                  className="hover:text-dgold transition duration-300"
+                  className="hover:text-dgold text-lg transition duration-300"
                 >
                   Gut Care Program
                 </a>
@@ -50,7 +50,7 @@ export default function Footer() {
               <li>
                 <a
                   href="/contact-us"
-                  className="hover:text-dgold transition duration-300"
+                  className="hover:text-dgold text-lg transition duration-300"
                 >
                   Contact
                 </a>
@@ -88,25 +88,25 @@ export default function Footer() {
             <div className="flex space-x-4 text-2xl">
               <a
                 href="#"
-                className="text-dgold hover:text-white transition duration-300"
+                className="text-dgold hover:text-black transition duration-300"
               >
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
               <a
                 href="#"
-                className="text-dgold hover:text-white transition duration-300"
+                className="text-dgold hover:text-black transition duration-300"
               >
                 <FontAwesomeIcon icon={faTwitter} />
               </a>
               <a
-                href="#"
-                className="text-dgold hover:text-white transition duration-300"
+                href="https://www.instagram.com/nutritionby_sonalikajsingh/?hl=en"
+                className="text-dgold hover:text-black transition duration-300"
               >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
               <a
                 href="#"
-                className="text-dgold hover:text-white transition duration-300"
+                className="text-dgold hover:text-black transition duration-300"
               >
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>

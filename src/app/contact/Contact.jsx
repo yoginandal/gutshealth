@@ -166,34 +166,40 @@ export default React.memo(function ContactForm() {
           />
         </div>
         <div className="space-y-4 bg-lgold p-6 rounded-lg text-white shadow-lg">
-          <div className="flex items-center space-x-3 p-3 bg-dgold rounded-md shadow-md">
-            <Mail className="w-10 h-10 p-2 bg-lgold rounded-full drop-shadow-md" />
-            <a href="mailto:ayurvedicnutritionbyss@gmail.com">
-              <div>
+          <div className="flex items-start space-x-3 p-3 bg-dgold rounded-md shadow-md">
+            <Mail className="min-w-10 h-10 p-2 bg-lgold rounded-full drop-shadow-md shrink-0" />
+            <a
+              href="mailto:ayurvedicnutritionbyss@gmail.com"
+              className="break-words"
+            >
+              <div className="text-sm">
                 Email us
-                <div>ayurvedicnutritionbyss@gmail.com</div>
+                <div className="text-xs">ayurvedicnutritionbyss@gmail.com</div>
               </div>
             </a>
           </div>
-          <div className="flex items-center space-x-3 p-3 bg-dgold rounded-md shadow-md">
-            <Phone className="w-10 h-10 p-2 bg-lgold rounded-full drop-shadow-md" />
-            <a href="tel:+919818295702">
-              <div>
+          <div className="flex items-start space-x-3 p-3 bg-dgold rounded-md shadow-md">
+            <Phone className="min-w-10 h-10 p-2 bg-lgold rounded-full drop-shadow-md shrink-0" />
+            <a href="tel:+919818295702" className="break-words">
+              <div className="text-sm">
                 Call us
-                <div>+91-9876543210</div>
+                <div className="text-xs">+91-9876543210</div>
               </div>
             </a>
           </div>
-          <div className="flex items-center space-x-3 p-3 bg-dgold rounded-md shadow-md">
-            <MapPin className="w-10 h-10 p-2 bg-lgold rounded-full drop-shadow-md" />
+          <div className="flex items-start space-x-3 p-3 bg-dgold rounded-md shadow-md">
+            <MapPin className="min-w-10 h-10 p-2 bg-lgold rounded-full drop-shadow-md shrink-0" />
             <a
               href="https://www.google.com/maps?q=230+Norman+Street+New+York,+H8R+1A1"
               target="_blank"
               rel="noopener noreferrer"
+              className="break-words"
             >
-              <div>
+              <div className="text-sm">
                 Our Address
-                <div>230 Norman Street New York, H8R 1A1</div>
+                <div className="text-xs">
+                  230 Norman Street New York, H8R 1A1
+                </div>
               </div>
             </a>
           </div>
